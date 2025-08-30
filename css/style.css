@@ -57,8 +57,9 @@ body {
 
     font-family: var(--second-font);
     font-size: 3.2rem;
-    font-weight: 700;
+    font-weight: 600;
     line-height: 1;
+    text-shadow: 1px 0px 0px var(--color-black);
     color: var(--color-black);
 }
 
@@ -115,3 +116,30 @@ body {
 }
 
 /* Mobile */
+@media screen and (max-width: 350.98px) {
+    .container {
+        width: 350px;
+        max-width: calc(100% - 32px);
+    }
+
+    .card {
+        display: block;
+        width: 343px;
+        height: 611px;
+    }
+    .card-sm-img {
+        display: block;
+        width: 100%;
+        height: 240px;
+        object-fit: cover;
+    }
+    .content {
+        padding: 24px;
+    }
+    .desc {
+        font-size: 1.3rem;
+    }
+    .price {
+        margin: 24px 0 20px;
+    }
+}
