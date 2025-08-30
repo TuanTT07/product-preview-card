@@ -1,0 +1,117 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color-green-500: #3c8067;
+    --primary-color-green-700: #1b4133;
+
+    --color-black: #1c232b;
+    --color-grey: #6c7289;
+    --color-cream: #f2ebe3;
+    --color-white: #ffffff;
+
+    --primary-font: "Montserrat", sans-serif;
+    --second-font: "Fraunces", serif;
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    font-family: var(--primary-font);
+    font-size: 1.4rem;
+    background: var(--color-cream);
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 1440px;
+    max-width: calc(100% - 40px);
+    margin: 0 auto;
+}
+
+.card {
+    display: flex;
+    width: 600px;
+    height: 450px;
+    border-radius: 12px;
+    overflow: hidden;
+    background: var(--color-white);
+}
+
+.content {
+    padding: 32px;
+}
+
+.lable {
+    font-size: 1.2rem;
+    letter-spacing: 5px;
+    color: var(--color-grey);
+}
+
+.title {
+    margin-top: 20px;
+    margin-bottom: 24px;
+
+    font-family: var(--second-font);
+    font-size: 3.2rem;
+    font-weight: 700;
+    line-height: 1;
+    color: var(--color-black);
+}
+
+.desc {
+    color: var(--color-grey);
+    line-height: 1.6;
+}
+
+.price {
+    display: flex;
+    gap: 19px;
+    align-items: center;
+    justify-content: flex-start;
+
+    margin: 30px 0;
+}
+
+.price-act {
+    font-family: var(--second-font);
+    font-size: 3.2rem;
+    font-weight: 700;
+    line-height: 1;
+
+    color: var(--primary-color-green-500);
+}
+
+.price-del {
+    text-decoration: line-through;
+    font-size: 1.3rem;
+    line-height: 1.7;
+    color: var(--color-grey);
+}
+
+.card-cta {
+    border-radius: 8px;
+    background: var(--primary-color-green-500);
+    transition: background 0.5s;
+}
+.card-cta:hover {
+    cursor: pointer;
+    background: var(--primary-color-green-700);
+}
+.btn {
+    display: block;
+    padding: 15px 0;
+    width: 100%;
+    font-weight: 700;
+    text-align: center;
+    color: var(--color-white);
+}
+.img {
+    display: inline-block;
+    margin-right: 12px;
+}
+
+/* Mobile */
